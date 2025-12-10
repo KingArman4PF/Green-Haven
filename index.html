@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Green Haven Dispensary</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="./images/icons8-cannabis-48.png" sizes="64x64">
+</head>
+<body class="welcome-active">
+
+  <!-- ======================= WELCOME SPLASH ======================= -->
+  <div id="welcome-screen">
+    <div class="welcome-content">
+      <h1>Welcome</h1>
+      <p>Must be 21+ to enter</p>
+      <button onclick="enterStore()">Enter Store</button>
+    </div>
+  </div>
+
+  <!-- ======================= MAIN SITE ======================= -->
+  <div id="main-site">
+
+    <!-- Falling leaves -->
+    <div class="falling-leaves">
+      <img src="./images/icons8-cannabis-48.png" class="leaf" alt="leaf">
+      <img src="./images/icons8-cannabis-48.png" class="leaf" alt="leaf">
+      <img src="./images/icons8-cannabis-48.png" class="leaf" alt="leaf">
+      <img src="./images/icons8-cannabis-48.png" class="leaf" alt="leaf">
+      <img src="./images/icons8-cannabis-48.png" class="leaf" alt="leaf">
+      <img src="./images/icons8-cannabis-48.png" class="leaf" alt="leaf">
+      <img src="./images/icons8-cannabis-48.png" class="leaf" alt="leaf">
+      <img src="./images/icons8-cannabis-48.png" class="leaf" alt="leaf">
+    </div>
+
+    <!-- Navbar -->
+    <div class="topnav" id="myTopnav">
+      <a href="#home" class="logo active">
+        <img src="./images/icons8-cannabis-48.png" alt="Leaf" class="nav-leaf"> Green Haven
+      </a>
+      <div class="nav-links">
+        <a href="#strains">Strains</a>
+        <a href="#about">About</a>
+        <a href="#contact">Find Us</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onclick="toggleFunction()">
+        <span></span><span></span><span></span>
+      </a>
+    </div>
+
+    <!-- HERO -->
+    <section id="home" class="hero-section">
+      <div class="container hero-content">
+        <h2>Elevate Your Vibe</h2>
+        <p>Premium flower • Edibles • Concentrates • Good times only</p>
+      </div>
+    </section>
+
+    <!-- STRAINS (NOW FIRST AFTER HERO) -->
+    <section id="strains" class="section menu">
+      <div class="container">
+        <h2 class="section-title">Top Strains</h2>
+        <div class="menu-grid">
+          <div class="card"><div class="card-inner"><div class="card-front"><img src="./images/blue-dream-strain-2.jpg" alt="Blue Dream"><div class="card-overlay"><h3>Blue Dream</h3><p class="price">Sativa-dominant</p></div></div><div class="card-back"><p>Berry sweetness • Uplifting • Creative focus</p></div></div></div>
+          <div class="card"><div class="card-inner"><div class="card-front"><img src="./images/wedding-cake-strain.jpg" alt="Wedding Cake"><div class="card-overlay"><h3>Wedding Cake</h3><p class="price">Hybrid</p></div></div><div class="card-back"><p>Vanilla frosting • Relaxed euphoria</p></div></div></div>
+          <div class="card"><div class="card-inner"><div class="card-front"><img src="./images/Gelato-Marijuana-Buds.jpg" alt="Gelato"><div class="card-overlay"><h3>Gelato</h3><p class="price">Hybrid</p></div></div><div class="card-back"><p>Creamy • Happy • Dessert strain</p></div></div></div>
+          <div class="card"><div class="card-inner"><div class="card-front"><img src="./images/og-kush-strain.jpg" alt="OG Kush"><div class="card-overlay"><h3>OG Kush</h3><p class="price">Indica-leaning</p></div></div><div class="card-back"><p>Earthy pine • Deep body relaxation</p></div></div></div>
+          <div class="card"><div class="card-inner"><div class="card-front"><img src="./images/GSC-strain.jpg" alt="GSC"><div class="card-overlay"><h3>GSC</h3><p class="price">Hybrid</p></div></div><div class="card-back"><p>Sweet mint • Potent & balanced</p></div></div></div>
+          <div class="card"><div class="card-inner"><div class="card-front"><img src="./images/purple-punch__primary.jpg" alt="Purple Punch"><div class="card-overlay"><h3>Purple Punch</h3><p class="price">Indica</p></div></div><div class="card-back"><p>Grape candy • Heavy nighttime vibes</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT (NOW AFTER STRAINS) -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Green Haven</h2>
+        <p>Founded in 2024 with one simple mission: deliver the highest quality cannabis in a welcoming, judgment-free space. From top-shelf flower to lab-tested concentrates, every product is hand-selected for potency, flavor, and consistency.</p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">Find Us</h2>
+        <p>Open Daily 10AM – 10PM</p>
+        <p><strong>Location:</strong> 145 Green Street</p>
+        <p><strong>Phone:</strong> (256) 789-499442</p>
+        <p><strong>Email:</strong> hello@greenhaven.shop</p>
+        <p><strong>YOU ORDER – WE DELIVER</strong></p>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- SCRIPTS -->
+  <script>
+    function enterStore() {
+      document.getElementById("welcome-screen").style.display = "none";
+      document.getElementById("main-site").style.display = "block";
+      document.body.classList.remove("welcome-active");
+    }
+    function toggleFunction() {
+      document.getElementById("myTopnav").classList.toggle("responsive");
+    }
+  </script>
+</body>
+</html>
